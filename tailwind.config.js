@@ -5,4 +5,7 @@ module.exports = {
   },
   safelist: [{pattern: /^.*$/}],
   plugins: [],
+  scripts: {
+    start: 'app.js'
+}
 }
