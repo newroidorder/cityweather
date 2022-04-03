@@ -56,13 +56,53 @@ body {
   /* 1 */
   line-height: inherit;
   /* 2 */
+  background-color: var(--body-bg);
+  color: var(--body-color);
+}
+#darkText {
+  color: var(--dark-text);
 }
 
+#btn {
+  color: var(--btn-button);
+  background: var(--btn-bg)
+}
+#layout {
+  color: var(--layout-text);
+  background-color: var(--layout-bg);
+}
+.dark-mode:root {
+  --body-bg: #212529;
+  --body-color: #899095;
+  --link-color: #dee2e6;
+  --dark-text: #fff;
+  --btn-button:  rgb(0, 0, 0);
+  --btn-bg: #ffffff;
+  --layout-text: #000;
+  --layout-bg: #fff;
+}
+
+
+#switch:checked .dot {
+  transform: translateX(100%);
+  background-color: #48bb78;
+}
+#switch:checked .dot {
+  transform: translateX(100%);
+  background-color: #48bb78;
+}
 /*
 1. Add the correct height in Firefox.
 2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
 3. Ensure horizontal rules are visible by default.
 */
+:root {
+  --body-bg: #fafafa;
+  --body-color: #555;
+  --link-color: #222;
+  --link-color-hover: #ec5840;
+}
+
 
 hr {
   height: 0;
@@ -101,8 +141,7 @@ Reset links to optimize for opt-in styling instead of opt-out.
 */
 
 a {
-  color: inherit;
-  text-decoration: inherit;
+  color: var(--link-color);
 }
 
 /*

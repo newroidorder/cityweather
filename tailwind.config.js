@@ -1,11 +1,13 @@
 module.exports = {
-  content: ['index.html'],
+  content: ['index.html, teste.html'],
   theme: {
     extend: {},
   },
   safelist: [{pattern: /^.*$/}],
-  plugins: [],
+  plugins: [
+    require('flowbite/plugin')
+  ],
   scripts: {
     start: 'app.js'
-}
+},
 }

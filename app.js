@@ -1,9 +1,3 @@
-let bg;
-const fundo=document.getElementById('')
-if (info.name === "oulu") {
-  bg = `url(https://source.unsplash.com/G9JhmiZFk)`
-}
-
 const btn = document.getElementById('btn');
 const search = document.getElementById('searchUser')
 const city = document.getElementById('city')
@@ -29,3 +23,12 @@ feelsLike.innerHTML = parseInt(info.main.feels_like);
 min.innerHTML = parseInt(info.main.temp_min);
 max.innerHTML = parseInt(info.main.temp_max);
 }
+
+
+// dark mode
+const $html = document.querySelector('html')
+const $checkbox = document.querySelector('#switch')
+
+$checkbox.addEventListener('change', function(){
+  $html.classList.toggle('dark-mode')
+})

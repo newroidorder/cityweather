@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "flowbite": "^1.4.1",
     "node-fetch": "^3.2.3"
   },
   "devDependencies": {
